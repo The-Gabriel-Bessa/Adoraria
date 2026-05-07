@@ -1,0 +1,9 @@
+print("\n=== [1] Iniciando login no sistema ===")
+iniciar_login(URL_LOGIN, EMAIL, SENHA)
+
+# Carregar base e processar
+df = carregar_base("Acessos Plataforma.xlsx") 
+df_resultado = verificar_e_matricular(df)
+
+# Salvar resultado
+df_resultado.to_excel("Resultado_Matriculas.xlsx", index=False)
