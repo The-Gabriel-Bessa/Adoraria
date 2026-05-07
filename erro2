@@ -1,9 +1,582 @@
-print("\n=== [1] Iniciando login no sistema ===")
-iniciar_login(URL_LOGIN, EMAIL, SENHA)
 
-# Carregar base e processar
-df = carregar_base("Acessos Plataforma.xlsx") 
-df_resultado = verificar_e_matricular(df)
+=== [1] Iniciando login no sistema ===
+✓ Iniciando processo de login...
+✓ Email inserido!
+✓ Senha inserida!
+✓ Login clicado!
+Aguardando 30 s para recebimento do código...
+✓ Código obtido: 139300
+✓ Código inserido!
+✓ Logado com sucesso!
+✓ Base carregada: 31 usuários únicos.
 
-# Salvar resultado
-df_resultado.to_excel("Resultado_Matriculas.xlsx", index=False)
+============================================================
+[1/31] Processando: leandro.minami@grupofleury.com.br | Idioma: PT
+✓ Já possui matrícula: leandro.minami@grupofleury.com.br
+
+============================================================
+[2/31] Processando: rousielma.oliveira@grupofleury.com.br | Idioma: PT
+✓ Já possui matrícula: rousielma.oliveira@grupofleury.com.br
+
+============================================================
+[3/31] Processando: csauceda.d.o@gmail.com | Idioma: ESP
+✓ Já possui matrícula: csauceda.d.o@gmail.com
+
+============================================================
+[4/31] Processando: santi.marta23@gmail.com | Idioma: ESP
+→ Sem matrícula. Iniciando cadastro: santi.marta23@gmail.com
+  ✓ Nome inserido!
+  ✓ E-mail inserido!
+  ✓ Instituição inserido!
+  ✓ GON inserido!
+  ✓ Site selecionado: Espanhol
+  ✓ Aluno salvo com sucesso!
+
+============================================================
+[5/31] Processando: vinicius.mn@hcancerbarretos.com.br | Idioma: PT
+✓ Já possui matrícula: vinicius.mn@hcancerbarretos.com.br
+
+============================================================
+[6/31] Processando: machado.23515@gmail.com | Idioma: PT
+→ Sem matrícula. Iniciando cadastro: machado.23515@gmail.com
+  ✓ Nome inserido!
+  ✓ E-mail inserido!
+  ✓ Instituição inserido!
+  ✓ GON inserido!
+  ✓ Site selecionado: Português
+  ✓ Aluno salvo com sucesso!
+
+============================================================
+[7/31] Processando: thbrooklyn3@gmail.com | Idioma: ESP
+→ Sem matrícula. Iniciando cadastro: thbrooklyn3@gmail.com
+  ✗ Erro ao matricular thbrooklyn3@gmail.com: Message: element click intercepted: Element <input type="button" name="Incluir" value="Incluir um novo Aluno" onclick="incluir();" class="btn btn-primary"> is not clickable at point (215, 390). Other element would receive the click: <a class="link-content for-collapse " data-toggle="collapse" href="#collapseSidebarPrimaryContent249" role="button" aria-expanded="false" aria-controls="collapseSidebarPrimaryContent2">...</a>
+  (Session info: chrome=147.0.7727.138); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff62aa8a8e5+14e45]
+	chromedriver!GetHandleVerifier [0x7ff62aa8a950+14eb0]
+	chromedriver!(No symbol) [0x7ff62a7fd6ed]
+	chromedriver!(No symbol) [0x7ff62a85f245]
+	chromedriver!(No symbol) [0x7ff62a85c95a]
+	chromedriver!(No symbol) [0x7ff62a8597e5]
+	chromedriver!(No symbol) [0x7ff62a858697]
+	chromedriver!(No symbol) [0x7ff62a84b1c6]
+	chromedriver!(No symbol) [0x7ff62a88002a]
+	chromedriver!(No symbol) [0x7ff62a84aa46]
+	chromedriver!(No symbol) [0x7ff62a8a483b]
+	chromedriver!(No symbol) [0x7ff62a8490e8]
+	chromedriver!(No symbol) [0x7ff62a849fc3]
+	chromedriver!GetHandleVerifier [0x7ff62ada0149+32a6a9]
+	chromedriver!GetHandleVerifier [0x7ff62ad9a715+324c75]
+	chromedriver!GetHandleVerifier [0x7ff62adbc012+346572]
+	chromedriver!GetHandleVerifier [0x7ff62aaa7cb5+32215]
+	chromedriver!GetHandleVerifier [0x7ff62aab087c+3addc]
+	chromedriver!GetHandleVerifier [0x7ff62aa940e4+1e644]
+	chromedriver!GetHandleVerifier [0x7ff62aa94296+1e7f6]
+	chromedriver!GetHandleVerifier [0x7ff62aa78737+2c97]
+	KERNEL32!BaseThreadInitThunk [0x7ffd831b259d+1d]
+	ntdll!RtlUserThreadStart [0x7ffd840aafb8+28]
+
+
+============================================================
+[8/31] Processando: ericka.ibarra@hotmail.com | Idioma: ESP
+→ Sem matrícula. Iniciando cadastro: ericka.ibarra@hotmail.com
+  ✗ Erro ao matricular ericka.ibarra@hotmail.com: Message: element click intercepted: Element <input type="button" name="Incluir" value="Incluir um novo Aluno" onclick="incluir();" class="btn btn-primary"> is not clickable at point (215, 390). Other element would receive the click: <a class="link-content for-collapse " data-toggle="collapse" href="#collapseSidebarPrimaryContent249" role="button" aria-expanded="false" aria-controls="collapseSidebarPrimaryContent2">...</a>
+  (Session info: chrome=147.0.7727.138); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff62aa8a8e5+14e45]
+	chromedriver!GetHandleVerifier [0x7ff62aa8a950+14eb0]
+	chromedriver!(No symbol) [0x7ff62a7fd6ed]
+	chromedriver!(No symbol) [0x7ff62a85f245]
+	chromedriver!(No symbol) [0x7ff62a85c95a]
+	chromedriver!(No symbol) [0x7ff62a8597e5]
+	chromedriver!(No symbol) [0x7ff62a858697]
+	chromedriver!(No symbol) [0x7ff62a84b1c6]
+	chromedriver!(No symbol) [0x7ff62a88002a]
+	chromedriver!(No symbol) [0x7ff62a84aa46]
+	chromedriver!(No symbol) [0x7ff62a8a483b]
+	chromedriver!(No symbol) [0x7ff62a8490e8]
+	chromedriver!(No symbol) [0x7ff62a849fc3]
+	chromedriver!GetHandleVerifier [0x7ff62ada0149+32a6a9]
+	chromedriver!GetHandleVerifier [0x7ff62ad9a715+324c75]
+	chromedriver!GetHandleVerifier [0x7ff62adbc012+346572]
+	chromedriver!GetHandleVerifier [0x7ff62aaa7cb5+32215]
+	chromedriver!GetHandleVerifier [0x7ff62aab087c+3addc]
+	chromedriver!GetHandleVerifier [0x7ff62aa940e4+1e644]
+	chromedriver!GetHandleVerifier [0x7ff62aa94296+1e7f6]
+	chromedriver!GetHandleVerifier [0x7ff62aa78737+2c97]
+	KERNEL32!BaseThreadInitThunk [0x7ffd831b259d+1d]
+	ntdll!RtlUserThreadStart [0x7ffd840aafb8+28]
+
+
+============================================================
+[9/31] Processando: claufa308@gmail.com | Idioma: ESP
+→ Sem matrícula. Iniciando cadastro: claufa308@gmail.com
+  ✗ Erro ao matricular claufa308@gmail.com: Message: element click intercepted: Element <input type="button" name="Incluir" value="Incluir um novo Aluno" onclick="incluir();" class="btn btn-primary"> is not clickable at point (215, 390). Other element would receive the click: <a class="link-content for-collapse " data-toggle="collapse" href="#collapseSidebarPrimaryContent249" role="button" aria-expanded="false" aria-controls="collapseSidebarPrimaryContent2">...</a>
+  (Session info: chrome=147.0.7727.138); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff62aa8a8e5+14e45]
+	chromedriver!GetHandleVerifier [0x7ff62aa8a950+14eb0]
+	chromedriver!(No symbol) [0x7ff62a7fd6ed]
+	chromedriver!(No symbol) [0x7ff62a85f245]
+	chromedriver!(No symbol) [0x7ff62a85c95a]
+	chromedriver!(No symbol) [0x7ff62a8597e5]
+	chromedriver!(No symbol) [0x7ff62a858697]
+	chromedriver!(No symbol) [0x7ff62a84b1c6]
+	chromedriver!(No symbol) [0x7ff62a88002a]
+	chromedriver!(No symbol) [0x7ff62a84aa46]
+	chromedriver!(No symbol) [0x7ff62a8a483b]
+	chromedriver!(No symbol) [0x7ff62a8490e8]
+	chromedriver!(No symbol) [0x7ff62a849fc3]
+	chromedriver!GetHandleVerifier [0x7ff62ada0149+32a6a9]
+	chromedriver!GetHandleVerifier [0x7ff62ad9a715+324c75]
+	chromedriver!GetHandleVerifier [0x7ff62adbc012+346572]
+	chromedriver!GetHandleVerifier [0x7ff62aaa7cb5+32215]
+	chromedriver!GetHandleVerifier [0x7ff62aab087c+3addc]
+	chromedriver!GetHandleVerifier [0x7ff62aa940e4+1e644]
+	chromedriver!GetHandleVerifier [0x7ff62aa94296+1e7f6]
+	chromedriver!GetHandleVerifier [0x7ff62aa78737+2c97]
+	KERNEL32!BaseThreadInitThunk [0x7ffd831b259d+1d]
+	ntdll!RtlUserThreadStart [0x7ffd840aafb8+28]
+
+
+============================================================
+[10/31] Processando: marciafontela75@gmail.com | Idioma: PT
+→ Sem matrícula. Iniciando cadastro: marciafontela75@gmail.com
+  ✗ Erro ao matricular marciafontela75@gmail.com: Message: element click intercepted: Element <input type="button" name="Incluir" value="Incluir um novo Aluno" onclick="incluir();" class="btn btn-primary"> is not clickable at point (215, 390). Other element would receive the click: <a class="link-content for-collapse " data-toggle="collapse" href="#collapseSidebarPrimaryContent249" role="button" aria-expanded="false" aria-controls="collapseSidebarPrimaryContent2">...</a>
+  (Session info: chrome=147.0.7727.138); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff62aa8a8e5+14e45]
+	chromedriver!GetHandleVerifier [0x7ff62aa8a950+14eb0]
+	chromedriver!(No symbol) [0x7ff62a7fd6ed]
+	chromedriver!(No symbol) [0x7ff62a85f245]
+	chromedriver!(No symbol) [0x7ff62a85c95a]
+	chromedriver!(No symbol) [0x7ff62a8597e5]
+	chromedriver!(No symbol) [0x7ff62a858697]
+	chromedriver!(No symbol) [0x7ff62a84b1c6]
+	chromedriver!(No symbol) [0x7ff62a88002a]
+	chromedriver!(No symbol) [0x7ff62a84aa46]
+	chromedriver!(No symbol) [0x7ff62a8a483b]
+	chromedriver!(No symbol) [0x7ff62a8490e8]
+	chromedriver!(No symbol) [0x7ff62a849fc3]
+	chromedriver!GetHandleVerifier [0x7ff62ada0149+32a6a9]
+	chromedriver!GetHandleVerifier [0x7ff62ad9a715+324c75]
+	chromedriver!GetHandleVerifier [0x7ff62adbc012+346572]
+	chromedriver!GetHandleVerifier [0x7ff62aaa7cb5+32215]
+	chromedriver!GetHandleVerifier [0x7ff62aab087c+3addc]
+	chromedriver!GetHandleVerifier [0x7ff62aa940e4+1e644]
+	chromedriver!GetHandleVerifier [0x7ff62aa94296+1e7f6]
+	chromedriver!GetHandleVerifier [0x7ff62aa78737+2c97]
+	KERNEL32!BaseThreadInitThunk [0x7ffd831b259d+1d]
+	ntdll!RtlUserThreadStart [0x7ffd840aafb8+28]
+
+
+============================================================
+[11/31] Processando: jgalli@cruzroja.org.ar | Idioma: ESP
+✓ Já possui matrícula: jgalli@cruzroja.org.ar
+
+============================================================
+[12/31] Processando: larissaarodriguess139@gmail.com | Idioma: PT
+→ Sem matrícula. Iniciando cadastro: larissaarodriguess139@gmail.com
+  ✗ Erro ao matricular larissaarodriguess139@gmail.com: Message: element click intercepted: Element <input type="button" name="Incluir" value="Incluir um novo Aluno" onclick="incluir();" class="btn btn-primary"> is not clickable at point (215, 390). Other element would receive the click: <a class="link-content for-collapse " data-toggle="collapse" href="#collapseSidebarPrimaryContent249" role="button" aria-expanded="false" aria-controls="collapseSidebarPrimaryContent2">...</a>
+  (Session info: chrome=147.0.7727.138); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff62aa8a8e5+14e45]
+	chromedriver!GetHandleVerifier [0x7ff62aa8a950+14eb0]
+	chromedriver!(No symbol) [0x7ff62a7fd6ed]
+	chromedriver!(No symbol) [0x7ff62a85f245]
+	chromedriver!(No symbol) [0x7ff62a85c95a]
+	chromedriver!(No symbol) [0x7ff62a8597e5]
+	chromedriver!(No symbol) [0x7ff62a858697]
+	chromedriver!(No symbol) [0x7ff62a84b1c6]
+	chromedriver!(No symbol) [0x7ff62a88002a]
+	chromedriver!(No symbol) [0x7ff62a84aa46]
+	chromedriver!(No symbol) [0x7ff62a8a483b]
+	chromedriver!(No symbol) [0x7ff62a8490e8]
+	chromedriver!(No symbol) [0x7ff62a849fc3]
+	chromedriver!GetHandleVerifier [0x7ff62ada0149+32a6a9]
+	chromedriver!GetHandleVerifier [0x7ff62ad9a715+324c75]
+	chromedriver!GetHandleVerifier [0x7ff62adbc012+346572]
+	chromedriver!GetHandleVerifier [0x7ff62aaa7cb5+32215]
+	chromedriver!GetHandleVerifier [0x7ff62aab087c+3addc]
+	chromedriver!GetHandleVerifier [0x7ff62aa940e4+1e644]
+	chromedriver!GetHandleVerifier [0x7ff62aa94296+1e7f6]
+	chromedriver!GetHandleVerifier [0x7ff62aa78737+2c97]
+	KERNEL32!BaseThreadInitThunk [0x7ffd831b259d+1d]
+	ntdll!RtlUserThreadStart [0x7ffd840aafb8+28]
+
+
+============================================================
+[13/31] Processando: drcluna07@gmail.com | Idioma: ESP
+→ Sem matrícula. Iniciando cadastro: drcluna07@gmail.com
+  ✗ Erro ao matricular drcluna07@gmail.com: Message: element click intercepted: Element <input type="button" name="Incluir" value="Incluir um novo Aluno" onclick="incluir();" class="btn btn-primary"> is not clickable at point (215, 390). Other element would receive the click: <a class="link-content for-collapse " data-toggle="collapse" href="#collapseSidebarPrimaryContent249" role="button" aria-expanded="false" aria-controls="collapseSidebarPrimaryContent2">...</a>
+  (Session info: chrome=147.0.7727.138); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff62aa8a8e5+14e45]
+	chromedriver!GetHandleVerifier [0x7ff62aa8a950+14eb0]
+	chromedriver!(No symbol) [0x7ff62a7fd6ed]
+	chromedriver!(No symbol) [0x7ff62a85f245]
+	chromedriver!(No symbol) [0x7ff62a85c95a]
+	chromedriver!(No symbol) [0x7ff62a8597e5]
+	chromedriver!(No symbol) [0x7ff62a858697]
+	chromedriver!(No symbol) [0x7ff62a84b1c6]
+	chromedriver!(No symbol) [0x7ff62a88002a]
+	chromedriver!(No symbol) [0x7ff62a84aa46]
+	chromedriver!(No symbol) [0x7ff62a8a483b]
+	chromedriver!(No symbol) [0x7ff62a8490e8]
+	chromedriver!(No symbol) [0x7ff62a849fc3]
+	chromedriver!GetHandleVerifier [0x7ff62ada0149+32a6a9]
+	chromedriver!GetHandleVerifier [0x7ff62ad9a715+324c75]
+	chromedriver!GetHandleVerifier [0x7ff62adbc012+346572]
+	chromedriver!GetHandleVerifier [0x7ff62aaa7cb5+32215]
+	chromedriver!GetHandleVerifier [0x7ff62aab087c+3addc]
+	chromedriver!GetHandleVerifier [0x7ff62aa940e4+1e644]
+	chromedriver!GetHandleVerifier [0x7ff62aa94296+1e7f6]
+	chromedriver!GetHandleVerifier [0x7ff62aa78737+2c97]
+	KERNEL32!BaseThreadInitThunk [0x7ffd831b259d+1d]
+	ntdll!RtlUserThreadStart [0x7ffd840aafb8+28]
+
+
+============================================================
+[14/31] Processando: airizarr01@mghpr.org | Idioma: ESP
+→ Sem matrícula. Iniciando cadastro: airizarr01@mghpr.org
+  ✗ Erro ao matricular airizarr01@mghpr.org: Message: element click intercepted: Element <input type="button" name="Incluir" value="Incluir um novo Aluno" onclick="incluir();" class="btn btn-primary"> is not clickable at point (215, 390). Other element would receive the click: <a class="link-content for-collapse " data-toggle="collapse" href="#collapseSidebarPrimaryContent249" role="button" aria-expanded="false" aria-controls="collapseSidebarPrimaryContent2">...</a>
+  (Session info: chrome=147.0.7727.138); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff62aa8a8e5+14e45]
+	chromedriver!GetHandleVerifier [0x7ff62aa8a950+14eb0]
+	chromedriver!(No symbol) [0x7ff62a7fd6ed]
+	chromedriver!(No symbol) [0x7ff62a85f245]
+	chromedriver!(No symbol) [0x7ff62a85c95a]
+	chromedriver!(No symbol) [0x7ff62a8597e5]
+	chromedriver!(No symbol) [0x7ff62a858697]
+	chromedriver!(No symbol) [0x7ff62a84b1c6]
+	chromedriver!(No symbol) [0x7ff62a88002a]
+	chromedriver!(No symbol) [0x7ff62a84aa46]
+	chromedriver!(No symbol) [0x7ff62a8a483b]
+	chromedriver!(No symbol) [0x7ff62a8490e8]
+	chromedriver!(No symbol) [0x7ff62a849fc3]
+	chromedriver!GetHandleVerifier [0x7ff62ada0149+32a6a9]
+	chromedriver!GetHandleVerifier [0x7ff62ad9a715+324c75]
+	chromedriver!GetHandleVerifier [0x7ff62adbc012+346572]
+	chromedriver!GetHandleVerifier [0x7ff62aaa7cb5+32215]
+	chromedriver!GetHandleVerifier [0x7ff62aab087c+3addc]
+	chromedriver!GetHandleVerifier [0x7ff62aa940e4+1e644]
+	chromedriver!GetHandleVerifier [0x7ff62aa94296+1e7f6]
+	chromedriver!GetHandleVerifier [0x7ff62aa78737+2c97]
+	KERNEL32!BaseThreadInitThunk [0x7ffd831b259d+1d]
+	ntdll!RtlUserThreadStart [0x7ffd840aafb8+28]
+
+
+============================================================
+[15/31] Processando: runajaguar@hotmail.com | Idioma: ESP
+→ Sem matrícula. Iniciando cadastro: runajaguar@hotmail.com
+  ✗ Erro ao matricular runajaguar@hotmail.com: Message: element click intercepted: Element <input type="button" name="Incluir" value="Incluir um novo Aluno" onclick="incluir();" class="btn btn-primary"> is not clickable at point (215, 390). Other element would receive the click: <a class="link-content for-collapse " data-toggle="collapse" href="#collapseSidebarPrimaryContent249" role="button" aria-expanded="false" aria-controls="collapseSidebarPrimaryContent2">...</a>
+  (Session info: chrome=147.0.7727.138); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff62aa8a8e5+14e45]
+	chromedriver!GetHandleVerifier [0x7ff62aa8a950+14eb0]
+	chromedriver!(No symbol) [0x7ff62a7fd6ed]
+	chromedriver!(No symbol) [0x7ff62a85f245]
+	chromedriver!(No symbol) [0x7ff62a85c95a]
+	chromedriver!(No symbol) [0x7ff62a8597e5]
+	chromedriver!(No symbol) [0x7ff62a858697]
+	chromedriver!(No symbol) [0x7ff62a84b1c6]
+	chromedriver!(No symbol) [0x7ff62a88002a]
+	chromedriver!(No symbol) [0x7ff62a84aa46]
+	chromedriver!(No symbol) [0x7ff62a8a483b]
+	chromedriver!(No symbol) [0x7ff62a8490e8]
+	chromedriver!(No symbol) [0x7ff62a849fc3]
+	chromedriver!GetHandleVerifier [0x7ff62ada0149+32a6a9]
+	chromedriver!GetHandleVerifier [0x7ff62ad9a715+324c75]
+	chromedriver!GetHandleVerifier [0x7ff62adbc012+346572]
+	chromedriver!GetHandleVerifier [0x7ff62aaa7cb5+32215]
+	chromedriver!GetHandleVerifier [0x7ff62aab087c+3addc]
+	chromedriver!GetHandleVerifier [0x7ff62aa940e4+1e644]
+	chromedriver!GetHandleVerifier [0x7ff62aa94296+1e7f6]
+	chromedriver!GetHandleVerifier [0x7ff62aa78737+2c97]
+	KERNEL32!BaseThreadInitThunk [0x7ffd831b259d+1d]
+	ntdll!RtlUserThreadStart [0x7ffd840aafb8+28]
+
+
+============================================================
+[16/31] Processando: mcogorno@garrahan.gov.ar | Idioma: ESP
+→ Sem matrícula. Iniciando cadastro: mcogorno@garrahan.gov.ar
+  ✗ Erro ao matricular mcogorno@garrahan.gov.ar: Message: element click intercepted: Element <input type="button" name="Incluir" value="Incluir um novo Aluno" onclick="incluir();" class="btn btn-primary"> is not clickable at point (215, 390). Other element would receive the click: <a class="link-content for-collapse " data-toggle="collapse" href="#collapseSidebarPrimaryContent249" role="button" aria-expanded="false" aria-controls="collapseSidebarPrimaryContent2">...</a>
+  (Session info: chrome=147.0.7727.138); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff62aa8a8e5+14e45]
+	chromedriver!GetHandleVerifier [0x7ff62aa8a950+14eb0]
+	chromedriver!(No symbol) [0x7ff62a7fd6ed]
+	chromedriver!(No symbol) [0x7ff62a85f245]
+	chromedriver!(No symbol) [0x7ff62a85c95a]
+	chromedriver!(No symbol) [0x7ff62a8597e5]
+	chromedriver!(No symbol) [0x7ff62a858697]
+	chromedriver!(No symbol) [0x7ff62a84b1c6]
+	chromedriver!(No symbol) [0x7ff62a88002a]
+	chromedriver!(No symbol) [0x7ff62a84aa46]
+	chromedriver!(No symbol) [0x7ff62a8a483b]
+	chromedriver!(No symbol) [0x7ff62a8490e8]
+	chromedriver!(No symbol) [0x7ff62a849fc3]
+	chromedriver!GetHandleVerifier [0x7ff62ada0149+32a6a9]
+	chromedriver!GetHandleVerifier [0x7ff62ad9a715+324c75]
+	chromedriver!GetHandleVerifier [0x7ff62adbc012+346572]
+	chromedriver!GetHandleVerifier [0x7ff62aaa7cb5+32215]
+	chromedriver!GetHandleVerifier [0x7ff62aab087c+3addc]
+	chromedriver!GetHandleVerifier [0x7ff62aa940e4+1e644]
+	chromedriver!GetHandleVerifier [0x7ff62aa94296+1e7f6]
+	chromedriver!GetHandleVerifier [0x7ff62aa78737+2c97]
+	KERNEL32!BaseThreadInitThunk [0x7ffd831b259d+1d]
+	ntdll!RtlUserThreadStart [0x7ffd840aafb8+28]
+
+
+============================================================
+[17/31] Processando: ilianacaballerorodriguez@gmail.com | Idioma: ESP
+→ Sem matrícula. Iniciando cadastro: ilianacaballerorodriguez@gmail.com
+  ✗ Erro ao matricular ilianacaballerorodriguez@gmail.com: Message: element click intercepted: Element <input type="button" name="Incluir" value="Incluir um novo Aluno" onclick="incluir();" class="btn btn-primary"> is not clickable at point (215, 390). Other element would receive the click: <a class="link-content for-collapse " data-toggle="collapse" href="#collapseSidebarPrimaryContent249" role="button" aria-expanded="false" aria-controls="collapseSidebarPrimaryContent2">...</a>
+  (Session info: chrome=147.0.7727.138); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff62aa8a8e5+14e45]
+	chromedriver!GetHandleVerifier [0x7ff62aa8a950+14eb0]
+	chromedriver!(No symbol) [0x7ff62a7fd6ed]
+	chromedriver!(No symbol) [0x7ff62a85f245]
+	chromedriver!(No symbol) [0x7ff62a85c95a]
+	chromedriver!(No symbol) [0x7ff62a8597e5]
+	chromedriver!(No symbol) [0x7ff62a858697]
+	chromedriver!(No symbol) [0x7ff62a84b1c6]
+	chromedriver!(No symbol) [0x7ff62a88002a]
+	chromedriver!(No symbol) [0x7ff62a84aa46]
+	chromedriver!(No symbol) [0x7ff62a8a483b]
+	chromedriver!(No symbol) [0x7ff62a8490e8]
+	chromedriver!(No symbol) [0x7ff62a849fc3]
+	chromedriver!GetHandleVerifier [0x7ff62ada0149+32a6a9]
+	chromedriver!GetHandleVerifier [0x7ff62ad9a715+324c75]
+	chromedriver!GetHandleVerifier [0x7ff62adbc012+346572]
+	chromedriver!GetHandleVerifier [0x7ff62aaa7cb5+32215]
+	chromedriver!GetHandleVerifier [0x7ff62aab087c+3addc]
+	chromedriver!GetHandleVerifier [0x7ff62aa940e4+1e644]
+	chromedriver!GetHandleVerifier [0x7ff62aa94296+1e7f6]
+	chromedriver!GetHandleVerifier [0x7ff62aa78737+2c97]
+	KERNEL32!BaseThreadInitThunk [0x7ffd831b259d+1d]
+	ntdll!RtlUserThreadStart [0x7ffd840aafb8+28]
+
+
+============================================================
+[18/31] Processando: lmateo02@mghpr.org | Idioma: ESP
+→ Sem matrícula. Iniciando cadastro: lmateo02@mghpr.org
+  ✗ Erro ao matricular lmateo02@mghpr.org: Message: element click intercepted: Element <input type="button" name="Incluir" value="Incluir um novo Aluno" onclick="incluir();" class="btn btn-primary"> is not clickable at point (215, 390). Other element would receive the click: <a class="link-content for-collapse " data-toggle="collapse" href="#collapseSidebarPrimaryContent249" role="button" aria-expanded="false" aria-controls="collapseSidebarPrimaryContent2">...</a>
+  (Session info: chrome=147.0.7727.138); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff62aa8a8e5+14e45]
+	chromedriver!GetHandleVerifier [0x7ff62aa8a950+14eb0]
+	chromedriver!(No symbol) [0x7ff62a7fd6ed]
+	chromedriver!(No symbol) [0x7ff62a85f245]
+	chromedriver!(No symbol) [0x7ff62a85c95a]
+	chromedriver!(No symbol) [0x7ff62a8597e5]
+	chromedriver!(No symbol) [0x7ff62a858697]
+	chromedriver!(No symbol) [0x7ff62a84b1c6]
+	chromedriver!(No symbol) [0x7ff62a88002a]
+	chromedriver!(No symbol) [0x7ff62a84aa46]
+	chromedriver!(No symbol) [0x7ff62a8a483b]
+	chromedriver!(No symbol) [0x7ff62a8490e8]
+	chromedriver!(No symbol) [0x7ff62a849fc3]
+	chromedriver!GetHandleVerifier [0x7ff62ada0149+32a6a9]
+	chromedriver!GetHandleVerifier [0x7ff62ad9a715+324c75]
+	chromedriver!GetHandleVerifier [0x7ff62adbc012+346572]
+	chromedriver!GetHandleVerifier [0x7ff62aaa7cb5+32215]
+	chromedriver!GetHandleVerifier [0x7ff62aab087c+3addc]
+	chromedriver!GetHandleVerifier [0x7ff62aa940e4+1e644]
+	chromedriver!GetHandleVerifier [0x7ff62aa94296+1e7f6]
+	chromedriver!GetHandleVerifier [0x7ff62aa78737+2c97]
+	KERNEL32!BaseThreadInitThunk [0x7ffd831b259d+1d]
+	ntdll!RtlUserThreadStart [0x7ffd840aafb8+28]
+
+
+============================================================
+[19/31] Processando: kathe_1809@hotmail.com | Idioma: ESP
+→ Sem matrícula. Iniciando cadastro: kathe_1809@hotmail.com
+  ✓ Nome inserido!
+  ✓ E-mail inserido!
+  ✓ Instituição inserido!
+  ✓ GON inserido!
+  ✓ Site selecionado: Espanhol
+  ✓ Aluno salvo com sucesso!
+
+============================================================
+[20/31] Processando: beluwilkins_15@hotmail.com | Idioma: ESP
+→ Sem matrícula. Iniciando cadastro: beluwilkins_15@hotmail.com
+  ✗ Erro ao matricular beluwilkins_15@hotmail.com: Message: element click intercepted: Element <input type="button" name="Incluir" value="Incluir um novo Aluno" onclick="incluir();" class="btn btn-primary"> is not clickable at point (215, 390). Other element would receive the click: <a class="link-content for-collapse " data-toggle="collapse" href="#collapseSidebarPrimaryContent249" role="button" aria-expanded="false" aria-controls="collapseSidebarPrimaryContent2">...</a>
+  (Session info: chrome=147.0.7727.138); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff62aa8a8e5+14e45]
+	chromedriver!GetHandleVerifier [0x7ff62aa8a950+14eb0]
+	chromedriver!(No symbol) [0x7ff62a7fd6ed]
+	chromedriver!(No symbol) [0x7ff62a85f245]
+	chromedriver!(No symbol) [0x7ff62a85c95a]
+	chromedriver!(No symbol) [0x7ff62a8597e5]
+	chromedriver!(No symbol) [0x7ff62a858697]
+	chromedriver!(No symbol) [0x7ff62a84b1c6]
+	chromedriver!(No symbol) [0x7ff62a88002a]
+	chromedriver!(No symbol) [0x7ff62a84aa46]
+	chromedriver!(No symbol) [0x7ff62a8a483b]
+	chromedriver!(No symbol) [0x7ff62a8490e8]
+	chromedriver!(No symbol) [0x7ff62a849fc3]
+	chromedriver!GetHandleVerifier [0x7ff62ada0149+32a6a9]
+	chromedriver!GetHandleVerifier [0x7ff62ad9a715+324c75]
+	chromedriver!GetHandleVerifier [0x7ff62adbc012+346572]
+	chromedriver!GetHandleVerifier [0x7ff62aaa7cb5+32215]
+	chromedriver!GetHandleVerifier [0x7ff62aab087c+3addc]
+	chromedriver!GetHandleVerifier [0x7ff62aa940e4+1e644]
+	chromedriver!GetHandleVerifier [0x7ff62aa94296+1e7f6]
+	chromedriver!GetHandleVerifier [0x7ff62aa78737+2c97]
+	KERNEL32!BaseThreadInitThunk [0x7ffd831b259d+1d]
+	ntdll!RtlUserThreadStart [0x7ffd840aafb8+28]
+
+
+============================================================
+[21/31] Processando: rojas0890@gmail.com | Idioma: ESP
+✓ Já possui matrícula: rojas0890@gmail.com
+
+============================================================
+[22/31] Processando: moliverizitto@gmail.com | Idioma: ESP
+→ Sem matrícula. Iniciando cadastro: moliverizitto@gmail.com
+  ✓ Nome inserido!
+  ✓ E-mail inserido!
+  ✓ Instituição inserido!
+  ✓ GON inserido!
+  ✓ Site selecionado: Espanhol
+  ✓ Aluno salvo com sucesso!
+
+============================================================
+[23/31] Processando: nahuath86@hotmail.com | Idioma: ESP
+✓ Já possui matrícula: nahuath86@hotmail.com
+
+============================================================
+[24/31] Processando: gentmoon1@gmail.com | Idioma: ESP
+→ Sem matrícula. Iniciando cadastro: gentmoon1@gmail.com
+  ✗ Erro ao matricular gentmoon1@gmail.com: Message: element click intercepted: Element <input type="button" name="Incluir" value="Incluir um novo Aluno" onclick="incluir();" class="btn btn-primary"> is not clickable at point (215, 390). Other element would receive the click: <a class="link-content for-collapse " data-toggle="collapse" href="#collapseSidebarPrimaryContent249" role="button" aria-expanded="false" aria-controls="collapseSidebarPrimaryContent2">...</a>
+  (Session info: chrome=147.0.7727.138); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff62aa8a8e5+14e45]
+	chromedriver!GetHandleVerifier [0x7ff62aa8a950+14eb0]
+	chromedriver!(No symbol) [0x7ff62a7fd6ed]
+	chromedriver!(No symbol) [0x7ff62a85f245]
+	chromedriver!(No symbol) [0x7ff62a85c95a]
+	chromedriver!(No symbol) [0x7ff62a8597e5]
+	chromedriver!(No symbol) [0x7ff62a858697]
+	chromedriver!(No symbol) [0x7ff62a84b1c6]
+	chromedriver!(No symbol) [0x7ff62a88002a]
+	chromedriver!(No symbol) [0x7ff62a84aa46]
+	chromedriver!(No symbol) [0x7ff62a8a483b]
+	chromedriver!(No symbol) [0x7ff62a8490e8]
+	chromedriver!(No symbol) [0x7ff62a849fc3]
+	chromedriver!GetHandleVerifier [0x7ff62ada0149+32a6a9]
+	chromedriver!GetHandleVerifier [0x7ff62ad9a715+324c75]
+	chromedriver!GetHandleVerifier [0x7ff62adbc012+346572]
+	chromedriver!GetHandleVerifier [0x7ff62aaa7cb5+32215]
+	chromedriver!GetHandleVerifier [0x7ff62aab087c+3addc]
+	chromedriver!GetHandleVerifier [0x7ff62aa940e4+1e644]
+	chromedriver!GetHandleVerifier [0x7ff62aa94296+1e7f6]
+	chromedriver!GetHandleVerifier [0x7ff62aa78737+2c97]
+	KERNEL32!BaseThreadInitThunk [0x7ffd831b259d+1d]
+	ntdll!RtlUserThreadStart [0x7ffd840aafb8+28]
+
+
+============================================================
+[25/31] Processando: liceduardo2009@hotmail.com | Idioma: ESP
+→ Sem matrícula. Iniciando cadastro: liceduardo2009@hotmail.com
+  ✗ Erro ao matricular liceduardo2009@hotmail.com: Message: element click intercepted: Element <input type="button" name="Incluir" value="Incluir um novo Aluno" onclick="incluir();" class="btn btn-primary"> is not clickable at point (215, 390). Other element would receive the click: <a class="link-content for-collapse " data-toggle="collapse" href="#collapseSidebarPrimaryContent249" role="button" aria-expanded="false" aria-controls="collapseSidebarPrimaryContent2">...</a>
+  (Session info: chrome=147.0.7727.138); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff62aa8a8e5+14e45]
+	chromedriver!GetHandleVerifier [0x7ff62aa8a950+14eb0]
+	chromedriver!(No symbol) [0x7ff62a7fd6ed]
+	chromedriver!(No symbol) [0x7ff62a85f245]
+	chromedriver!(No symbol) [0x7ff62a85c95a]
+	chromedriver!(No symbol) [0x7ff62a8597e5]
+	chromedriver!(No symbol) [0x7ff62a858697]
+	chromedriver!(No symbol) [0x7ff62a84b1c6]
+	chromedriver!(No symbol) [0x7ff62a88002a]
+	chromedriver!(No symbol) [0x7ff62a84aa46]
+	chromedriver!(No symbol) [0x7ff62a8a483b]
+	chromedriver!(No symbol) [0x7ff62a8490e8]
+	chromedriver!(No symbol) [0x7ff62a849fc3]
+	chromedriver!GetHandleVerifier [0x7ff62ada0149+32a6a9]
+	chromedriver!GetHandleVerifier [0x7ff62ad9a715+324c75]
+	chromedriver!GetHandleVerifier [0x7ff62adbc012+346572]
+	chromedriver!GetHandleVerifier [0x7ff62aaa7cb5+32215]
+	chromedriver!GetHandleVerifier [0x7ff62aab087c+3addc]
+	chromedriver!GetHandleVerifier [0x7ff62aa940e4+1e644]
+	chromedriver!GetHandleVerifier [0x7ff62aa94296+1e7f6]
+	chromedriver!GetHandleVerifier [0x7ff62aa78737+2c97]
+	KERNEL32!BaseThreadInitThunk [0x7ffd831b259d+1d]
+	ntdll!RtlUserThreadStart [0x7ffd840aafb8+28]
+
+
+============================================================
+[26/31] Processando: erick_montalvo3@hotmail.com | Idioma: ESP
+✓ Já possui matrícula: erick_montalvo3@hotmail.com
+
+============================================================
+[27/31] Processando: nathaliefrsantos@hotmail.com | Idioma: PT
+→ Sem matrícula. Iniciando cadastro: nathaliefrsantos@hotmail.com
+  ✗ Erro ao matricular nathaliefrsantos@hotmail.com: Message: element click intercepted: Element <input type="button" name="Incluir" value="Incluir um novo Aluno" onclick="incluir();" class="btn btn-primary"> is not clickable at point (215, 390). Other element would receive the click: <a class="link-content for-collapse " data-toggle="collapse" href="#collapseSidebarPrimaryContent249" role="button" aria-expanded="false" aria-controls="collapseSidebarPrimaryContent2">...</a>
+  (Session info: chrome=147.0.7727.138); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff62aa8a8e5+14e45]
+	chromedriver!GetHandleVerifier [0x7ff62aa8a950+14eb0]
+	chromedriver!(No symbol) [0x7ff62a7fd6ed]
+	chromedriver!(No symbol) [0x7ff62a85f245]
+	chromedriver!(No symbol) [0x7ff62a85c95a]
+	chromedriver!(No symbol) [0x7ff62a8597e5]
+	chromedriver!(No symbol) [0x7ff62a858697]
+	chromedriver!(No symbol) [0x7ff62a84b1c6]
+	chromedriver!(No symbol) [0x7ff62a88002a]
+	chromedriver!(No symbol) [0x7ff62a84aa46]
+	chromedriver!(No symbol) [0x7ff62a8a483b]
+	chromedriver!(No symbol) [0x7ff62a8490e8]
+	chromedriver!(No symbol) [0x7ff62a849fc3]
+	chromedriver!GetHandleVerifier [0x7ff62ada0149+32a6a9]
+	chromedriver!GetHandleVerifier [0x7ff62ad9a715+324c75]
+	chromedriver!GetHandleVerifier [0x7ff62adbc012+346572]
+	chromedriver!GetHandleVerifier [0x7ff62aaa7cb5+32215]
+	chromedriver!GetHandleVerifier [0x7ff62aab087c+3addc]
+	chromedriver!GetHandleVerifier [0x7ff62aa940e4+1e644]
+	chromedriver!GetHandleVerifier [0x7ff62aa94296+1e7f6]
+	chromedriver!GetHandleVerifier [0x7ff62aa78737+2c97]
+	KERNEL32!BaseThreadInitThunk [0x7ffd831b259d+1d]
+	ntdll!RtlUserThreadStart [0x7ffd840aafb8+28]
+
+
+============================================================
+[28/31] Processando: menezesadriano72@gmail.com | Idioma: PT
+→ Sem matrícula. Iniciando cadastro: menezesadriano72@gmail.com
+  ✗ Erro ao matricular menezesadriano72@gmail.com: Message: element click intercepted: Element <input type="button" name="Incluir" value="Incluir um novo Aluno" onclick="incluir();" class="btn btn-primary"> is not clickable at point (215, 390). Other element would receive the click: <a class="link-content for-collapse " data-toggle="collapse" href="#collapseSidebarPrimaryContent249" role="button" aria-expanded="false" aria-controls="collapseSidebarPrimaryContent2">...</a>
+  (Session info: chrome=147.0.7727.138); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff62aa8a8e5+14e45]
+	chromedriver!GetHandleVerifier [0x7ff62aa8a950+14eb0]
+	chromedriver!(No symbol) [0x7ff62a7fd6ed]
+	chromedriver!(No symbol) [0x7ff62a85f245]
+	chromedriver!(No symbol) [0x7ff62a85c95a]
+	chromedriver!(No symbol) [0x7ff62a8597e5]
+	chromedriver!(No symbol) [0x7ff62a858697]
+	chromedriver!(No symbol) [0x7ff62a84b1c6]
+	chromedriver!(No symbol) [0x7ff62a88002a]
+	chromedriver!(No symbol) [0x7ff62a84aa46]
+	chromedriver!(No symbol) [0x7ff62a8a483b]
+	chromedriver!(No symbol) [0x7ff62a8490e8]
+	chromedriver!(No symbol) [0x7ff62a849fc3]
+	chromedriver!GetHandleVerifier [0x7ff62ada0149+32a6a9]
+	chromedriver!GetHandleVerifier [0x7ff62ad9a715+324c75]
+	chromedriver!GetHandleVerifier [0x7ff62adbc012+346572]
+	chromedriver!GetHandleVerifier [0x7ff62aaa7cb5+32215]
+	chromedriver!GetHandleVerifier [0x7ff62aab087c+3addc]
+	chromedriver!GetHandleVerifier [0x7ff62aa940e4+1e644]
+	chromedriver!GetHandleVerifier [0x7ff62aa94296+1e7f6]
+	chromedriver!GetHandleVerifier [0x7ff62aa78737+2c97]
+	KERNEL32!BaseThreadInitThunk [0x7ffd831b259d+1d]
+	ntdll!RtlUserThreadStart [0x7ffd840aafb8+28]
+
+
+============================================================
+[29/31] Processando: arthurantunes1@hotmail.com | Idioma: PT
